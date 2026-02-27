@@ -1,3 +1,4 @@
+#if 0
 #include "main.h"
 
 std::vector<Auton> AutonObjectList;
@@ -527,7 +528,7 @@ Auton newBlueGoalRushAuton(
 
         // my_task2.remove();
 
-        /*
+        
         // Go for the ring stack
         chassis.moveToPoint(-2, -64, 1500, {.forwards = true, .maxSpeed = 100}, false);
         // IntakeSpeed = -127;
@@ -538,7 +539,7 @@ Auton newBlueGoalRushAuton(
         IntakeMotor.brake();
         chassis.moveToPoint(0, -72, 1500, {.forwards = true, .maxSpeed = 80}, false);
         // chassis.moveToPoint(-2, -52, 1700, {.forwards = true, .maxSpeed = 127}, false);
-        */
+        
     }
 );
 
@@ -655,7 +656,7 @@ unsigned short int autonSelect = blueRingSideAuton.autonNum;
 
 
 
-/**
+
  * Runs the user autonomous code. This function will be started in its own task
  * with the default priority and stack size whenever the robot is enabled via
  * the Field Management System or the VEX Competition Switch in the autonomous
@@ -665,7 +666,8 @@ unsigned short int autonSelect = blueRingSideAuton.autonNum;
  * If the robot is disabled or communications is lost, the autonomous task
  * will be stopped. Re-enabling the robot will restart the task, not re-start it
  * from where it left off.
- */
+ 
 void autonomous() {
     AutonObjectList[autonSelect].routine();
 }
+#endif
