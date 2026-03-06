@@ -1,3 +1,5 @@
+#if 0
+
 #include "lemlib/chassis/chassis.hpp"
 #include "global.hpp"
 
@@ -32,3 +34,4 @@ void turnToPoint(float x, float y, int timeout, lemlib::TurnToPointParams params
     if(isBlue) chassis.turnToPoint(x, y, timeout, params, async);
     else chassis.turnToPoint(x * -1, y, timeout, params, async);
 }
+#endif

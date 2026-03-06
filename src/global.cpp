@@ -3,9 +3,8 @@
 
 pros::Controller Controller(pros::E_CONTROLLER_MASTER);
 
-pros::MotorGroup left_mg({-7, -9, -11}, pros::v5::MotorGears::blue);
-pros::MotorGroup right_mg({15, 14, 17}, pros::v5::MotorGears::blue);
-
+pros::MotorGroup left_mg({2, 1}, pros::v5::MotorGears::blue);
+pros::MotorGroup right_mg({-11, -12}, pros::v5::MotorGears::blue);
 pros::MotorGroup LadybrownMotors({19, -20});
 
 pros::IMU imu(4);

@@ -1,3 +1,5 @@
+#if 0
+
 #include "main.h"
 
 // creates a boolean variable that sets the variable to false
@@ -40,3 +42,4 @@ void RingRush() {
         ringRushActivated = false;
     }
 }
+#endif
