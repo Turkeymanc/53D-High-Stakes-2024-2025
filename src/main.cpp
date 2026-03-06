@@ -89,8 +89,9 @@ void opcontrol() {
 	// if(!pros::competition::is_connected()) autonomous();
 
 	// Initializes the ladybrown task
+	#if 0
 	pros::Task ladybrown_task(LadybrownTask, (void*)"PROS");
-
+#endif
 	int intakeSpeed = 500;
 
 	while (true) {
@@ -100,6 +101,7 @@ void opcontrol() {
 
 		left_mg.move(LYAxis); // Sets left motor voltage
 		right_mg.move(RYAxis); // Sets right motor voltage
+        #if 0
 
 		// When the L1 controller button is pressed...
 		if(Controller.get_digital_new_press(pros::E_CONTROLLER_DIGITAL_L1)) {
@@ -128,7 +130,6 @@ void opcontrol() {
 
 		// Sets the clamp to operate in driver control after pressing the A button
 		if(Controller.get_digital_new_press(pros::E_CONTROLLER_DIGITAL_A)) PneumaticClamp();
-
 		if(Controller.get_digital(pros::E_CONTROLLER_DIGITAL_L2)) {
 			if (!goalRushActivated) {
 				GoalRushPiston.set_value(1);
@@ -140,7 +141,7 @@ void opcontrol() {
 				goalRushActivated = false;
 			}
 		}
-
+       #endif
 
 		if(Controller.get_digital_new_press(pros::E_CONTROLLER_DIGITAL_Y)) {
 			driveReversed = !driveReversed;
