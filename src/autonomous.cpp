@@ -1,5 +1,5 @@
-#if 0
 #include "main.h"
+#if 0
 
 std::vector<Auton> AutonObjectList;
 

@@ -1,7 +1,8 @@
-#if 0
 
 #include "lemlib/chassis/chassis.hpp"
 #include "global.hpp"
+
+#if 0
 
 bool isBlue = true;
 

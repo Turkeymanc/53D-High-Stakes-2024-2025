@@ -1,6 +1,5 @@
-#if 0
 
-#include "main.h"
+#if 0
 
 // creates a boolean variable that sets the variable to false
 bool clampPistonsActivated = false;

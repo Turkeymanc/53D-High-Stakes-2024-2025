@@ -1,6 +1,5 @@
-#if 0
-
 #include "main.h"
+#if end
 
 /*
     1: Position 1 - Starting
